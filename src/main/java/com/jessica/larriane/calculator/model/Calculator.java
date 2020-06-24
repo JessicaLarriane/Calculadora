@@ -4,6 +4,7 @@ import lombok.*;
 
 @AllArgsConstructor
 @NoArgsConstructor
+@ToString
 
 public class Calculator {
 
@@ -25,13 +26,4 @@ public class Calculator {
         return value1 / value2;
     }
 
-    @Override
-    public String toString() {
-        return "Valor 1: " + value1 +
-                "\nValor 2: " + value2 +
-                "\nAdição: " + addition() +
-                "\nSubtração: " + subtraction() +
-                "\nMultiplicação: " + multiplication() +
-                "\nDivisão: " + division();
-    }
 }
