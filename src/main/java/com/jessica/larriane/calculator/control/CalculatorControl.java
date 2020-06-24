@@ -19,7 +19,12 @@ public class CalculatorControl {
         c1.setValue1(10);
         c1.setValue2(5);
 
-        return c1.toString();
+        return "Valor 1: " + c1.getValue1() +
+                "\nValor 2: " + c1.getValue2()+
+                "\nAdição: " + c1.addition() +
+                "\nSubtração: " + c1.subtraction() +
+                "\nMultiplicação: " + c1.multiplication() +
+                "\nDivisão: " + c1.division();
     }
 
 }
